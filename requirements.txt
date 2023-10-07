@@ -1,0 +1,4 @@
+transformers
+tensorflow
+fastapi
+uvicorn
