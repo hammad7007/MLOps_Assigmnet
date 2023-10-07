@@ -1,0 +1,19 @@
+name: Build Docker Image
+
+on:
+  push:
+    branches:
+      branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build Docker Image
+      run: |
+        docker build -t myDockerImage:latest .
+      
