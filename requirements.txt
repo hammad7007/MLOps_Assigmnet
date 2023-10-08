@@ -2,3 +2,6 @@ transformers
 tensorflow
 fastapi
 uvicorn
+git+https://github.com/huggingface/transformers
+gradio
+torch
